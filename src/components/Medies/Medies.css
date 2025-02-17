@@ -1,0 +1,151 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* Darker text for better contrast */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.heading{
+    color: #333;
+}
+
+.headingdesc{
+    color: #535050;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space logo and nav items */
+    align-items: center;
+}
+
+.logo img {
+    max-height: 60px; /* Adjust logo height as needed */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero {
+    background-image: url("https://plus.unsplash.com/premium_photo-1673953510197-0950d951c6d9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with a medical-themed hero image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+main {
+    padding: 40px;
+}
+
+.services, .doctors, .about-us, .contact {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center section titles */
+}
+
+.service-grid, .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service, .doctor {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.service i { /* Style the service icons */
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.doctor img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make doctor images circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.service:hover, .doctor:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
