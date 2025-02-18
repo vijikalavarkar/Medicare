@@ -18,7 +18,7 @@ const Medies = () => {
         <div class="hero">
             <h1 class="heading">Caring for your health is our mission</h1>
             <p class="headingdesc">Providing compassionate and comprehensive medical care.</p>
-            <button>Learn More</button>
+            <button>Testing Deployment</button>
         </div>
     </header>
 
