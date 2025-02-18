@@ -16,7 +16,7 @@ const Medies = () => {
             </ul>
         </nav>
         <div class="hero">
-            <h1 class="heading">Your Health is Our Priority</h1>
+            <h1 class="heading">Caring for your health is our mission</h1>
             <p class="headingdesc">Providing compassionate and comprehensive medical care.</p>
             <button>Learn More</button>
         </div>
